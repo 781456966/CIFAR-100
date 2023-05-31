@@ -25,7 +25,6 @@
 （三）批量处理<br>
 &nbsp;&nbsp;&nbsp;&nbsp;对于每种数据增强方式的epoch，都设置为100。训练集的batch_size设置为128，一个epoch约有391个iteration；测试集的batch_size设置为100，一个epoch约有393个iteration。
 
-
 （四）优化器<br>
 &nbsp;&nbsp;&nbsp;&nbsp;优化器选用Adam优化，它是一种利用动量和缩放的自适应学习率优化算法，适用于非平稳目标和具有非常嘈杂或稀疏梯度的问题。在此处选用学习率0.01。<br>
 
@@ -34,3 +33,6 @@
 
 （六）评价指标<br>
 &nbsp;&nbsp;&nbsp;&nbsp;考察分类的准确率，为分类正确的个数与样本个数的比值。<br>
+
+<br>
+其中model.py包含网络模型、训练函数、测试函数、数据增强函数；vision.py是可视化图片；train_test.py是训练模型，并对测试集测试。
